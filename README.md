@@ -13,3 +13,19 @@ You can install them using:
 ```sh
 pkg install jq
 pkg install termux-api
+
+## Usage
+
+1. Clone this repo using:
+''' bash
+git clone https://github.com/MayankGH7/Light-Sensor-Torch.git
+'''
+2. Change dir to cloned dir:
+''' bash
+cd Light-Sensor-Torch
+'''
+
+3. Run the script using:
+''' bash
+./flash_automation.sh
+'''
