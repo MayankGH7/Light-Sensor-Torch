@@ -29,5 +29,5 @@ cd Light-Sensor-Torch
 
 4. Run the script using:
 ``` sh
-./flash_automation.sh
+bash flash_automation.sh
 ```
