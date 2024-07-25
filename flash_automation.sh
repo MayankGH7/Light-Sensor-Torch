@@ -25,11 +25,12 @@ while true; do
     continue
   fi
 
-  if [ "$light" -eq 0 ]; then
+  if [ "$light" -le 7 ]; then
     if [ $is_on -eq 0 ]; then
       termux-torch on
       if [ $? -eq 0 ]; then
         echo -e "\033[1;32mTorch on\033[0m"
+        echo $light
         is_on=1
         is_off=0
       else
@@ -41,6 +42,7 @@ while true; do
       termux-torch off
       if [ $? -eq 0 ]; then
         echo -e "\033[1;31mTorch off\033[0m"
+        echo $light
         is_off=1
         is_on=0
       else
